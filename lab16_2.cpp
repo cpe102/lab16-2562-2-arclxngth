@@ -1,7 +1,15 @@
 #include<iostream>
 using namespace std;
 
-//Write the definition of myString() here
+void myString(char *&z, int N){
+
+	z = new char [N];
+
+	for(int i=0; i<N; i++){
+		z[i] = 'A' + i;
+	}	
+	z[N] = '\0';
+}
 
 int main(){
 	char *p;
